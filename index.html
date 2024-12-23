@@ -1,30 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Website</title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Main Heading -->
-    <nav>
-  <a href="index.html">This button does nothing</a> |
-  <a href="about.html">This button does nothing</a> |
-  <a href="contact.html">This button does nothing</a>
-   </nav>
-    <h1>I built a website</h1>
-    <img src="picture.jpg" alt="A cars tail light" width="300">
-    <img src="image.jpg" alt="canadian flag" width="300">
-    <!-- Subheading -->
-    <h2> This took less than 30 minutes to make </h2>
-    
-    <!-- Paragraph -->
-    <p> It was free to create and host </p>
-    
-    <!-- Button with JavaScript -->
-    <button onclick="sayHello()">Button</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Restorations & Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Classic Restorations & Sales</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#parts">Parts for Sale</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Link to JavaScript -->
-    <script src="script.js"></script>
-  </body>
+    <section id="home">
+        <h2>Welcome to Classic Restorations & Sales</h2>
+        <p>Specializing in restoring classic cars and offering quality car parts for sale. Explore our services and get in touch for your restoration needs.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Full classic car restorations</li>
+            <li>Custom paint jobs</li>
+            <li>Repair and rebuilding of components</li>
+        </ul>
+    </section>
+
+    <section id="parts">
+        <h2>Parts for Sale</h2>
+        <p>We sell a wide variety of car parts on our eBay store. Click the link below to browse our inventory.</p>
+        <a href="https://www.ebay.com/" target="_blank" class="button">Visit our eBay Store</a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out some of our completed projects below!</p>
+        <div class="gallery">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us in Prescott, AZ, or give us a call at (928) 899-1325. You can also reach us via email at info@classicrestorations.com.</p>
+        <div id="map">
+            <!-- Embed Google Map -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Classic Restorations & Sales. All rights reserved.</p>
+    </footer>
+</body>
 </html>
