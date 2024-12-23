@@ -22,6 +22,19 @@ header h1 {
     margin: 0;
 }
 
+/* Style for lists */
+ul {
+    list-style-position: inside; /* Keeps bullets aligned with text */
+    padding: 0; /* Removes unnecessary padding around the list */
+    margin: 10px 0; /* Adds consistent spacing */
+}
+
+ul li {
+    margin: 5px 0; /* Reduces spacing between list items */
+    line-height: 1.6; /* Improves readability */
+    font-weight: 400; /* Ensures text weight is consistent */
+}
+
 /* Navigation Menu */
 nav ul {
     list-style: none;
