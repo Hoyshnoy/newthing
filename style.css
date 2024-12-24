@@ -163,6 +163,15 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header h1, section h2 {
+        font-family: 'Pacifico', cursive;
+    }
+
+
     nav ul {
         flex-direction: column;
         padding: 10px;
