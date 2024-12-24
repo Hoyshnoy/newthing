@@ -14,7 +14,6 @@ header {
     text-align: center;
     padding: 20px;
     border-bottom: 5px solid #2A6BAC; /* Medium Blue */
-
 }
 
 header h1 {
@@ -22,6 +21,7 @@ header h1 {
     font-size: 3rem;
     margin: 0;
 }
+
 /* Logo Styles */
 .logo-container {
     text-align: center;
@@ -87,7 +87,7 @@ section {
 }
 
 section h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', cursive; /* Ensure Pacifico is applied to sections */
     color: #2A6BAC; /* Medium Blue */
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -97,6 +97,7 @@ section p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
 /* homepage images */
 .homepage-image {
     width: 100%; /* Make it responsive and take up full container width */
@@ -164,13 +165,12 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif; /* Explicitly set Poppins for mobile */
     }
 
     header h1, section h2 {
-        font-family: 'Pacifico', cursive;
+        font-family: 'Pacifico', cursive; /* Explicitly set Pacifico for headings on mobile */
     }
-
 
     nav ul {
         flex-direction: column;
