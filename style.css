@@ -171,24 +171,36 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header Gradient */
     header {
-        background: radial-gradient(circle, white 30%, #003478 100%);
-        padding: 70px 20px 30px; /* Adjust padding for mobile */
+        background: radial-gradient(circle, white 10%, #003478 90%);
+        padding: 100px 20px 50px; /* Adjust padding for better spacing */
     }
 
+    /* Logo Position */
     .logo-container {
-        top: 50px; /* Move the logo down slightly */
+        top: 70px; /* Moves the logo down slightly */
+        transform: translate(-50%, 0);
     }
+
+    .logo {
+        width: 120px; /* Adjust logo size for mobile */
+    }
+
+    /* Font Settings */
     body {
-        font-family: 'Poppins', sans-serif; /* Explicitly set Poppins for mobile */
+        font-family: 'Poppins', sans-serif !important; /* Ensure consistent font */
     }
 
     header h1, section h2 {
-        font-family: 'Pacifico', cursive; /* Explicitly set Pacifico for headings on mobile */
+        font-family: 'Pacifico', cursive !important; /* Ensure heading fonts match */
+        font-size: 1.8rem; /* Reduce heading size for mobile */
     }
 
+    /* Navigation Menu */
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
         padding: 10px;
     }
 
@@ -196,6 +208,13 @@ button:hover {
         margin: 10px 0;
     }
 
+    nav ul li a {
+        font-size: 1rem; /* Make buttons smaller */
+        padding: 8px 12px; /* Adjust padding */
+        border-radius: 15px; /* Smaller rounded corners */
+    }
+
+    /* Gallery Images */
     .gallery img {
         width: 90%;
     }
