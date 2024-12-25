@@ -180,7 +180,7 @@ button:hover {
         background: radial-gradient(circle, white 50%, #003478 100%);
     color: #fff;
     text-align: center;
-    padding: 50px 20px 50px; /* Increase top padding for extra space */
+    padding: 50px 20px 20px; /* Increase top padding for extra space */
     border-bottom: 5px solid #2A6BAC; /* Medium Blue */
     position: relative; /* Allows for absolute positioning of the logo */
     box-sizing: border-box; /* Ensure padding is calculated correctly */
