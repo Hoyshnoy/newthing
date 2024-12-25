@@ -174,7 +174,7 @@ button:hover {
     /* Header Gradient */
     header {
         background: radial-gradient(circle, white 30%, #003478 90%);
-        padding: 10px 20px 20px; /* testing lowing first number Reduce height */
+        padding: 20px 20px 20px; /* testing lowing first number Reduce height */
     }
 
     /* Logo Position */
