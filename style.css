@@ -209,7 +209,7 @@ button:hover {
 
     /* Header Text */
     header h1 {
-        
+        font-family: 'Poppins', sans-serif; /* Ensure consistent font */
         font-size: 1.5rem; /* Reduce text size */
         margin-top: 100px; /* Add space below the logo */
         color: #003478; /* Ensure visibility */
@@ -232,7 +232,8 @@ button:hover {
         font-family: 'Poppins', Arial, sans-serif; /* Ensure consistent font */
     }
 
-    header h1, section h2 {
-        font-family: 'Pacifico', cursive; /* Ensure heading fonts match */
+    section h2 {
+         font-family: 'Poppins', Arial, sans-serif;  /* Ensure heading fonts match */
+         font-size: 1.5rem;
     }
 }
