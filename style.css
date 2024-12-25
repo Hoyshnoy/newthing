@@ -209,7 +209,7 @@ button:hover {
 
     /* Header Text */
     header h1 {
-        font-family: 'Pacifico', cursive;
+        
         font-size: 1.5rem; /* Reduce text size */
         margin-top: 100px; /* Add space below the logo */
         color: #003478; /* Ensure visibility */
