@@ -12,9 +12,9 @@ header {
     background: radial-gradient(circle, white 50%, #003478 100%);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px; /* Increase top padding to provide space for the logo */
     border-bottom: 5px solid #2A6BAC; /* Medium Blue */
-    position: relative; /* For proper alignment with the logo */
+    position: relative; /* Allows proper positioning of the logo */
 }
 
 header h1 {
@@ -26,11 +26,10 @@ header h1 {
 /* Logo Styles */
 .logo-container {
     text-align: center;
-    margin-bottom: 20px;
     position: absolute;
-    top: 50%;
+    top: 10%; /* Adjust this to move the logo higher */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0); /* Keep the logo horizontally centered */
 }
 
 .logo {
@@ -39,9 +38,9 @@ header h1 {
     display: block;
     margin: 0 auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional for subtle depth */
-    border-radius: 50%; /* Makes the logo circular, if desired */
+    border-radius: 50%; /* Makes the logo circular */
     background-color: white; /* Ensures the logo stands out */
-    padding: 10px; /* Adds spacing between the logo and the border */
+    padding: 10px; /* Adds spacing between the logo and its border */
 }
 
 /* Style for lists */
