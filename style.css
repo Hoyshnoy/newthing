@@ -173,49 +173,36 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        background: radial-gradient(circle, white 10%, #003478 90%);
-        padding: 100px 20px 50px; /* Adjust padding for better spacing */
+        background: radial-gradient(circle, white 20%, #003478 85%);
+        padding: 100px 20px 40px; /* Add space around header */
     }
 
     /* Logo Position */
     .logo-container {
-        top: 70px; /* Moves the logo down slightly */
-        transform: translate(-50%, 0);
+        top: 90px; /* Lower logo slightly */
+        transform: translate(-50%, 0); /* Center horizontally */
     }
 
     .logo {
-        width: 120px; /* Adjust logo size for mobile */
+        width: 100px; /* Reduce logo size */
     }
 
-    /* Font Settings */
-    body {
-        font-family: 'Poppins', sans-serif !important; /* Ensure consistent font */
-    }
-
-    header h1, section h2 {
-        font-family: 'Pacifico', cursive !important; /* Ensure heading fonts match */
-        font-size: 1.8rem; /* Reduce heading size for mobile */
+    /* Header Text */
+    header h1 {
+        font-size: 1.5rem; /* Smaller text size */
+        margin-top: 150px; /* Push text below the logo */
+        color: #003478; /* Ensure visibility */
     }
 
     /* Navigation Menu */
     nav ul {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px; /* Add spacing between buttons */
-        padding: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+        flex-direction: column; /* Stack buttons */
+        gap: 8px; /* Space between buttons */
     }
 
     nav ul li a {
-        font-size: 1rem; /* Make buttons smaller */
-        padding: 8px 12px; /* Adjust padding */
-        border-radius: 15px; /* Smaller rounded corners */
-    }
-
-    /* Gallery Images */
-    .gallery img {
-        width: 90%;
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 6px 10px; /* Adjust padding */
+        border-radius: 10px; /* Smaller rounded corners */
     }
 }
