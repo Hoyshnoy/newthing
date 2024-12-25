@@ -173,48 +173,43 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        /*background: radial-gradient(circle, white 50%, #003478 100%);
-        padding: 50px 20px 20px; /* testing lowing first number Reduce height end of block out*/
-
-        /*testing*/
-        background: radial-gradient(circle, white 50%, #003478 100%);
-        /*background: radial-gradient(circle, white 60%, #003478 100%);*/
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px 20px; /* Increase top padding for extra space */
-    border-bottom: 5px solid #2A6BAC; /* Medium Blue */
-    position: relative; /* Allows for absolute positioning of the logo */
-    box-sizing: border-box; /* Ensure padding is calculated correctly */
-        /*end of testing*/
+        background: radial-gradient(circle at center 30px, white 60%, #003478 100%);
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px 20px; /* Adjusted for better spacing */
+        border-bottom: 5px solid #2A6BAC; /* Medium Blue */
+        position: relative;
+        box-sizing: border-box; /* Ensure padding is calculated correctly */
     }
 
     /* Logo Position */
     .logo-container {
-        top: 50px; /* Move the logo slightly lower */
+        top: 10px; /* Fine-tuned to center logo */
         transform: translate(-50%, 0);
     }
 
     .logo {
-        width: 100px; /* Adjust size */
+        width: 100px; /* Maintain a consistent size for mobile */
+        height: auto; /* Maintain aspect ratio */
     }
 
     /* Header Text */
     header h1 {
-        font-size: 1.5rem; /* Reduce text size */
-        margin-top: 100px; /* Add space below the logo */
-        color: #003478; /* Ensure visibility */
+        font-size: 1.4rem; /* Reduce text size for mobile */
+        margin-top: 120px; /* Ensure proper spacing from logo */
+        color: #003478; /* Ensure visibility on gradient */
     }
 
     /* Navigation Menu */
     nav ul {
         flex-direction: column; /* Stack buttons */
-        gap: 8px; /* Space between buttons */
+        gap: 5px; /* Tighten spacing between buttons */
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Smaller buttons */
-        padding: 6px 10px; /* Adjust padding */
-        border-radius: 10px; /* Smaller rounded corners */
+        font-size: 0.9rem; /* Smaller text for buttons */
+        padding: 5px 15px; /* Adjust padding */
+        border-radius: 8px; /* Slightly smaller rounded corners */
     }
 
     /* Fonts for Mobile */
@@ -223,6 +218,6 @@ button:hover {
     }
 
     header h1, section h2 {
-        font-family: 'Pacifico', cursive; /* Ensure heading fonts match */
+        font-family: 'Pacifico', cursive; /* Ensure consistent heading font */
     }
 }
