@@ -23,6 +23,26 @@ header h1 {
     font-size: 3rem;
     margin: 0;
 }
+.store-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2A6BAC; /* Medium Blue */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    text-align: center;
+}
+
+.store-link:hover {
+    background-color: #003478; /* Dark Blue */
+    color: #f4efe9; /* Light cream */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Hover effect */
+}
 
 /* Logo Styles */
 .logo-container {
