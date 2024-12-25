@@ -171,6 +171,14 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        background: radial-gradient(circle, white 30%, #003478 100%);
+        padding: 70px 20px 30px; /* Adjust padding for mobile */
+    }
+
+    .logo-container {
+        top: 50px; /* Move the logo down slightly */
+    }
     body {
         font-family: 'Poppins', sans-serif; /* Explicitly set Poppins for mobile */
     }
