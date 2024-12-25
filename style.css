@@ -38,7 +38,7 @@ header h1 {
     height: auto;
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    box-shadow: none; /* Optional shadow for depth */
     border-radius: 50%; /* Circular appearance */
     background-color: white; /* White background around the logo */
     padding: 5px; /* Add spacing inside the logo */
