@@ -173,7 +173,7 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        background: radial-gradient(circle, white 30%, #003478 90%);
+        background: radial-gradient(circle, white 50%, #003478 100%);
         padding: 20px 20px 20px; /* testing lowing first number Reduce height */
     }
 
