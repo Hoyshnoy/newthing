@@ -173,25 +173,24 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        background: radial-gradient(circle at center top, white 30%, #003478 100%);
-        padding: 50px 20px 20px; /* Smaller header on mobile */
+        background: radial-gradient(circle, white 30%, #003478 90%);
+        padding: 60px 20px 20px; /* Reduce height */
     }
 
     /* Logo Position */
     .logo-container {
-        top: 80px; /* Move the logo lower for mobile */
+        top: 50px; /* Move the logo slightly lower */
         transform: translate(-50%, 0);
     }
 
-    /* Logo Size */
     .logo {
-        width: 120px; /* Slightly smaller logo on mobile */
+        width: 100px; /* Adjust size */
     }
 
     /* Header Text */
     header h1 {
-        font-size: 1.8rem; /* Adjust text size */
-        margin-top: 30px; /* Add space below the logo */
+        font-size: 1.5rem; /* Reduce text size */
+        margin-top: 100px; /* Add space below the logo */
         color: #003478; /* Ensure visibility */
     }
 
@@ -207,8 +206,12 @@ button:hover {
         border-radius: 10px; /* Smaller rounded corners */
     }
 
-    /* Section Headings */
-    section h2 {
-        font-size: 1.5rem; /* Slightly smaller section headings */
+    /* Fonts for Mobile */
+    body {
+        font-family: 'Poppins', Arial, sans-serif; /* Ensure consistent font */
+    }
+
+    header h1, section h2 {
+        font-family: 'Pacifico', cursive; /* Ensure heading fonts match */
     }
 }
