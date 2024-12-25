@@ -173,7 +173,7 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        background: radial-gradient(circle at center 30px, white 60%, #003478 100%);
+        background: radial-gradient(circle at center 40px, white 60%, #003478 100%);
         color: #fff;
         text-align: center;
         padding: 80px 20px 20px; /* Adjusted for better spacing */
