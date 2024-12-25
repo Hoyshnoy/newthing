@@ -173,8 +173,8 @@ button:hover {
 @media (max-width: 768px) {
     /* Header Gradient */
     header {
-        background: radial-gradient(circle, white 30%, #003478 90%);
-        padding: 60px 20px 20px; /* Reduce height */
+        background: radial-gradient(circle at 50% 20%, white 30%, #003478 90%);
+        padding: 60px 20px 20px; /* Adjust padding for better height */
     }
 
     /* Logo Position */
