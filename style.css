@@ -189,8 +189,8 @@ section p {
 .car-section h3 {
     font-family: 'Raleway', sans-serif; /* Ensure Pacifico is applied to sections */
     color: #2A6BAC; /* Medium Blue */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 /* Container to hold image + banner */
