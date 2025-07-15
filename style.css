@@ -222,6 +222,30 @@ section p {
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   font-size: 0.9rem;
 }
+/* Car Details Bullet List */
+#car-details ul {
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+  max-width: 800px;
+  text-align: left;
+}
+
+#car-details ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+#car-details ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #2A6BAC;
+  font-size: 1.2rem;
+}
 
 /* Footer */
 footer {
