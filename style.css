@@ -157,6 +157,46 @@ section p {
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
+/* Cars For Sale Sections */
+#cars-for-sale {
+  margin-top: 40px;
+}
+
+.car-section {
+  margin-bottom: 40px;
+}
+
+.car-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Container to hold image + banner */
+.car-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.car-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #003478; /* Optional: match gallery border */
+  border-radius: 10px;
+}
+
+/* The FOR SALE banner */
+.car-image-container .banner {
+  position: absolute;
+  top: 20px;
+  right: -40px; /* Adjust if needed */
+  background: red;
+  color: white;
+  padding: 5px 40px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  font-size: 0.9rem;
+}
 
 /* Footer */
 footer {
