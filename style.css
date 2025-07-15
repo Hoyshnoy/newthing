@@ -166,7 +166,7 @@ section p {
   margin-bottom: 40px;
 }
 .details-link {
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   padding: 8px 16px;
   background-color: #2A6BAC; /* Medium Blue */
