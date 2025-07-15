@@ -166,15 +166,18 @@ section p {
   margin-bottom: 40px;
 }
 .details-link {
-  display: block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #2A6BAC; /* Medium Blue */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2A6BAC; /* Medium Blue */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    text-align: center;
 }
 
 .details-link:hover {
