@@ -184,12 +184,12 @@ section p {
   background-color: #003478; /* Dark Blue */
   color: #f4efe9; /* Light cream */
 }
-
+/* Car names */
 .car-section h3 {
-    font-family: 'Pacifico', cursive; /* Ensure Pacifico is applied to sections */
-    color: #2A6BAC; /* Medium Blue */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif; /* Ensure Pacifico is applied to sections */
+    color: #003478; /* Medium Blue */
+    font-size: 2.0rem;
+    margin-bottom: 10px;
 }
 
 /* Container to hold image + banner */
