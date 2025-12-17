@@ -278,8 +278,71 @@ button:hover {
     color: #333;
 }
 
+/* =========================
+   Gallery Carousel Styles
+   ========================= */
+
+.car-section {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    border: 5px solid #003478;
+    border-radius: 10px;
+}
+
+/* Carousel arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 52, 120, 0.85); /* Matches your dark blue */
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 12px 16px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 15px;
+}
+
+.arrow.right {
+    right: 15px;
+}
+
+.arrow:hover {
+    background: rgba(0, 52, 120, 1);
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* arrow for photos */
+        .arrow {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
     /* Header Gradient */
     header {
         background: radial-gradient(circle at 50% 20%, white 18%, #003478 90%);
