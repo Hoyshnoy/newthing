@@ -5,37 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Classic Restorations & Sales</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
+
+<header>
+    <div class="logo-container">
         <img src="images/logo.png" alt="Classic Restorations and Sales Logo" class="logo">
     </div>
-        <h1>Classic Restorations & Sales</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="sales.html">Sales</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Classic Restorations & Sales</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out some of our completed projects below!</p>
-        <div class="gallery">
-            <img src="images/courier_1.jpg" alt="1956 Courier in Garage">
-            <img src="images/mustang_boss_1.jpg" alt="Orange Mustang in Grass">
-            <img src="images/mercury_1.jpg" alt="Merc in Front of Business">
-            <img src="images/ranchero_1.jpg" alt="Ranchero">
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Check out some of our completed projects below!</p>
+
+    <!-- 1954 Mercury -->
+    <div class="car-section">
+        <h3>1954 Mercury</h3>
+        <div class="carousel" data-index="0">
+            <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/gallery/1954_mercury/mercury_1.jpg" alt="1954 Mercury">
+                <img src="images/gallery/1954_mercury/mercury_2.jpeg" alt="1954 Mercury">
+                <img src="images/gallery/1954_mercury/mercury_3.png" alt="1954 Mercury">
+            </div>
+            <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Classic Restorations & Sales. All rights reserved.</p>
-    </footer>
+    <!-- 1956 Ford Courier -->
+    <div class="car-section">
+        <h3>1956 Ford Courier</h3>
+        <div class="carousel" data-index="0">
+            <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/gallery/1956_ford_courier/courier_1.jpg" alt="1956 Ford Courier">
+                <img src="images/gallery/1956_ford_courier/courier_2.jpeg" alt="1956 Ford Courier">
+                <img src="images/gallery/1956_ford_courier/courier_engine_bay.jpeg" alt="1956 Ford Courier Engine Bay">
+            </div>
+            <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- 1958 Ford Ranchero -->
+    <div class="car-section">
+        <h3>1958 Ford Ranchero</h3>
+        <div class="carousel" data-index="0">
+            <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/gallery/1958_ranchero/ranchero_1.jpeg" alt="1958 Ford Ranchero">
+                <img src="images/gallery/1958_ranchero/ranchero_2.jpeg" alt="1958 Ford Ranchero">
+                <img src="images/gallery/1958_ranchero/ranchero_3.jpeg" alt="1958 Ford Ranchero">
+                <img src="images/gallery/1958_ranchero/ranchero_4.jpeg" alt="1958 Ford Ranchero">
+                <img src="images/gallery/1958_ranchero/ranchero_5.jpeg" alt="1958 Ford Ranchero">
+                <img src="images/gallery/1958_ranchero/ranchero_6.jpeg" alt="1958 Ford Ranchero">
+            </div>
+            <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- 1964 Falcon Ranchero -->
+    <div class="car-section">
+        <h3>1964 Falcon Ranchero</h3>
+        <div class="carousel" data-index="0">
+            <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/gallery/1964_falcon_ranchero/ranchero_1.jpg" alt="1964 Falcon Ranchero">
+                <img src="images/gallery/1964_falcon_ranchero/ranchero_2.jpg" alt="1964 Falcon Ranchero">
+            </div>
+            <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- 1970 Boss Mustang -->
+    <div class="car-section">
+        <h3>1970 Boss Mustang</h3>
+        <div class="carousel" data-index="0">
+            <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/gallery/1970_boss_mustang/mustang_boss_1.jpg" alt="1970 Boss Mustang">
+            </div>
+            <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Classic Restorations & Sales. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
