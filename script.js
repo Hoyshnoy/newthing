@@ -50,33 +50,6 @@ document.addEventListener('click', (e) => {
     document.body.appendChild(lightbox);
 });
 
-// Mobile-friendly navigation toggle
-const navToggle = document.createElement('button');
-navToggle.textContent = 'Menu';
-navToggle.style.position = 'fixed';
-navToggle.style.top = '10px';
-navToggle.style.left = '10px';
-navToggle.style.zIndex = '1001';
-navToggle.style.background = '#444';
-navToggle.style.color = '#fff';
-navToggle.style.border = 'none';
-navToggle.style.padding = '0.5rem 1rem';
-navToggle.style.cursor = 'pointer';
-
-document.body.appendChild(navToggle);
-
-const nav = document.querySelector('nav ul');
-nav.style.display = 'none';
-
-navToggle.addEventListener('click', () => {
-    nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
-    nav.style.flexDirection = 'column';
-    nav.style.position = 'absolute';
-    nav.style.top = '50px';
-    nav.style.background = '#333';
-    nav.style.width = '100%';
-    nav.style.padding = '1rem';
-});
 
 // =======================
 // Carousel functionality
