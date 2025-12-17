@@ -1,48 +1,56 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').slice(1);
-        const targetElement = document.getElementById(targetId);
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
 
-        window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-        });
+        // Only smooth-scroll for in-page links
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.getElementById(href.slice(1));
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
 });
 
-// Lightbox effect for images
-document.querySelectorAll('.gallery img').forEach(image => {
-    image.addEventListener('click', () => {
-        const lightbox = document.createElement('div');
-        lightbox.id = 'lightbox';
-        lightbox.style.position = 'fixed';
-        lightbox.style.top = '0';
-        lightbox.style.left = '0';
-        lightbox.style.width = '100%';
-        lightbox.style.height = '100%';
-        lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        lightbox.style.display = 'flex';
-        lightbox.style.alignItems = 'center';
-        lightbox.style.justifyContent = 'center';
-        lightbox.style.zIndex = '1000';
+// Lightbox effect for carousel images
+document.addEventListener('click', (e) => {
+    const image = e.target.closest('.carousel-images img');
+    if (!image) return;
 
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.style.maxWidth = '90%';
-        img.style.maxHeight = '90%';
-        lightbox.appendChild(img);
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.style.position = 'fixed';
+    lightbox.style.top = '0';
+    lightbox.style.left = '0';
+    lightbox.style.width = '100%';
+    lightbox.style.height = '100%';
+    lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    lightbox.style.display = 'flex';
+    lightbox.style.alignItems = 'center';
+    lightbox.style.justifyContent = 'center';
+    lightbox.style.zIndex = '1000';
 
-        lightbox.addEventListener('click', () => {
-            lightbox.remove();
-        });
+    const img = document.createElement('img');
+    img.src = image.src;
+    img.style.maxWidth = '90%';
+    img.style.maxHeight = '90%';
+    img.style.borderRadius = '8px';
 
-        document.body.appendChild(lightbox);
+    lightbox.appendChild(img);
+
+    lightbox.addEventListener('click', () => {
+        lightbox.remove();
     });
+
+    document.body.appendChild(lightbox);
 });
 
-// Mobile-friendly navigation toggle (optional)
+// Mobile-friendly navigation toggle
 const navToggle = document.createElement('button');
 navToggle.textContent = 'Menu';
 navToggle.style.position = 'fixed';
@@ -68,4 +76,43 @@ navToggle.addEventListener('click', () => {
     nav.style.background = '#333';
     nav.style.width = '100%';
     nav.style.padding = '1rem';
+});
+
+// =======================
+// Carousel functionality
+// =======================
+
+function updateCarousel(carousel) {
+    const images = carousel.querySelector('.carousel-images');
+    const index = parseInt(carousel.dataset.index, 10);
+    const width = carousel.clientWidth;
+
+    images.style.transform = `translateX(-${index * width}px)`;
+}
+
+function nextSlide(button) {
+    const carousel = button.closest('.carousel');
+    const images = carousel.querySelectorAll('img');
+    let index = parseInt(carousel.dataset.index, 10);
+
+    index = (index + 1) % images.length;
+    carousel.dataset.index = index;
+
+    updateCarousel(carousel);
+}
+
+function prevSlide(button) {
+    const carousel = button.closest('.carousel');
+    const images = carousel.querySelectorAll('img');
+    let index = parseInt(carousel.dataset.index, 10);
+
+    index = (index - 1 + images.length) % images.length;
+    carousel.dataset.index = index;
+
+    updateCarousel(carousel);
+}
+
+// Keep carousels aligned on resize
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.carousel').forEach(updateCarousel);
 });
