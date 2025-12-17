@@ -38,7 +38,18 @@
   <li>Radio restoration and concealed CD player with front and rear speakers</li>
 </ul>
 
-    <img src="images/gallery/1954_mercury/mercury_1.jpg" alt="Mercury front view" class="homepage-image">
+ <!-- 🔁 CAROUSEL (reused from gallery) -->
+  <div class="carousel" data-index="0">
+    <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+
+    <div class="carousel-images">
+      <img src="images/gallery/1954_mercury/mercury_1.jpg" alt="1954 Mercury side view">
+      <img src="images/gallery/1954_mercury/mercury_2.jpeg" alt="1954 Mercury front view">
+      <img src="images/gallery/1954_mercury/mercury_3.png" alt="1954 Mercury interior">
+    </div>
+
+    <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+  </div>
     
 
     <a href="contact.html" class="details-link">Contact Us About This Car</a>
