@@ -301,7 +301,10 @@ button:hover {
 
 .carousel-images img {
     width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto;
     flex-shrink: 0;
+    object-fit: cover;
     border: 5px solid #003478;
     border-radius: 10px;
 }
@@ -342,6 +345,9 @@ button:hover {
         .arrow {
         font-size: 20px;
         padding: 8px 12px;
+    }
+    .carousel {
+        max-width: 100%;
     }
     /* Header Gradient */
     header {
