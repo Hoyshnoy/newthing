@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>1956 Ford Courier - Classic Restorations & Sales</title>
   <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -33,9 +34,19 @@
       <li>add details</li>
     </ul>
 
-    <img src="images/gallery/1956_ford_courier/courier_1.jpg" alt="1956 Courier front view" class="homepage-image">
-    <img src="images/gallery/1956_ford_courier/courier_2.jpeg" alt="1956 Courier side view" class="homepage-image">
-    <img src="images/gallery/1956_ford_courier/courier_engine_bay.jpeg" alt="1956 Courier engine bay" class="homepage-image">
+ <!-- 🔁 CAROUSEL -->
+  <div class="carousel" data-index="0">
+    <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+
+    <div class="carousel-images">
+      <img src="images/gallery/1956_ford_courier/courier_1.jpg" alt="1956 Ford Courier front view">
+      <img src="images/gallery/1956_ford_courier/courier_2.jpeg" alt="1956 Ford Courier side view">
+      <img src="images/gallery/1956_ford_courier/courier_engine_bay.jpeg" alt="1956 Ford Courier engine bay">
+    </div>
+
+    <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+  </div>
+
 
     <a href="contact.html" class="details-link">Contact Us About This Car</a>
   </section>
